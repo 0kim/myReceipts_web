@@ -1,0 +1,43 @@
+
+.box_show {
+    visibility: visible;
+}
+
+.box_hide {
+    visibility: visible;
+}
+
+.button_hide {
+    visibility: hidden;
+}
+
+/*.container {*/
+    /*position: static;*/
+/*}*/
+
+body {
+    margin-top:30px !important;
+}
+
+.login-position {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.reciept-position {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+}
+
+.login-receipt-form {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+}

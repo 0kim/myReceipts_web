@@ -1,3 +1,11 @@
+# project specific ignores
+src/temp/*
+.idea
+target/*
+env.sh
+deploy.sh
+.DS_Store
+
 # Logs
 logs
 *.log
