@@ -37,7 +37,9 @@ body {
 }
 
 .login-receipt-form {
-    margin-left: 10%;
-    margin-right: 10%;
     position: relative;
+}
+
+#receipt_box {
+    padding: 0px !important;
 }

@@ -78,24 +78,24 @@
 
         var e_receipt_form = `
             <!-- Beginning of Receipt form -->
-                <div class="col-sm-offset-1 col-sm-10 reciept-position" id="receipt_box">
-                    <table class="table table-striped">
+                <div class="col-xs-12 col-sm-12 reciept-position" id="receipt_box">
+                    <table class="table table-striped receipt-form-table">
                         <tr>
-                            <td class="col-sm-3"></td>
-                            <td class="col-sm-9"></td>
+                            <td class="col-sm-4 col-xs-4 col-md-4"></td>
+                            <td class="col-sm-8 col-xs-8 col-md-8"></td>
                         </tr><tr>
-                            <td class="col-sm-3 text-right">날짜</td>
-                            <td class="col-sm-9">
+                            <td class="col-sm-4 text-right">날짜</td>
+                            <td class="col-sm-8">
                                 <input type="datetime-local" class="form-control" id="receipt_datetime"  />
                             </td>
                         </tr><tr>
-                            <td class="col-sm-3 text-right">금액</td>
-                            <td class="col-sm-9">
+                            <td class="col-sm-4 text-right">금액</td>
+                            <td class="col-sm-8">
                                 <input type="number" class="form-control" id="receipt_amount" />
                             </td>
                         </tr><tr>
-                            <td class="col-sm-3 text-right">장소</td>
-                            <td class="col-sm-9">
+                            <td class="col-sm-4 text-right">장소</td>
+                            <td class="col-sm-8">
                                 <input type="text" class="form-control" id="receipt_store" />
                             </td>
                         </tr>
@@ -106,8 +106,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="col-sm-3 text-right">통화</td>
-                            <td>
+                            <td class="col-sm-4 text-right">통화</td>
+                            <td class="col-sm-8">
                                 <div class="btn-group" role="group" aria-label="currency" id="btngroup-currency">
                                     <button type="button" class="btn btn-default"
                                             onclick="set_receipt_val('currency', 'KRW')">KRW</button>
@@ -120,8 +120,8 @@
                                 </div>
                             </td>
                         </tr><tr>
-                            <td class="col-sm-3 text-right">지출방법</td>
-                            <td class="col-sm-9">
+                            <td class="col-sm-4 text-right">지출방법</td>
+                            <td class="col-sm-8">
                                 <div class="btn-group" role="group" aria-label="payment" id="btngroup-payment">
                                     <button type="button" class="btn btn-default"
                                         onclick="set_receipt_val('card_name', 'CASH')">CASH</button>
@@ -130,8 +130,8 @@
                                 </div>
                             </td>
                         </tr><tr>
-                            <td class="col-sm-3 text-right">국가</td>
-                            <td class="col-sm-9">
+                            <td class="col-sm-4 text-right">국가</td>
+                            <td class="col-sm-8">
                                 <div class="btn-group" role="group" aria-label="country" id="btngroup-currency">
                                     <button type="button" class="btn btn-default"
                                         onclick="set_receipt_val('type', '국내')">국내</button>
