@@ -36,7 +36,7 @@ function show_receipt_box() {
 
 function receipt_submit() {
     var d = $('#receipt_datetime').val();
-    d = d.replace('T', ' ');
+    d = d.replace('T', '     ');
     d += ':00';
     new_receipt['date'] = d;
     new_receipt['amount'] = $('#receipt_amount').val();
@@ -104,6 +104,7 @@ function login_action() {
     cognitoUser.authenticateUser(authenticationDetails, {
         onSuccess: function (result) {
             show_receipt_box();
+            init_receipt();
         },
         onFailure: function(err) {
             alert(err);
@@ -118,7 +119,7 @@ $( document ).ready( function ()
         var now = {};
 
         now["year"] = d.getFullYear() + "";
-        now["month"] = d.getMonth() < 9 ? "0" + (d.getMonth()+1) : "" + d.getMonth();
+        now["month"] = d.getMonth() < 10 ? "0" + (d.getMonth()+1) : "" + (d.getMonth()+1);
         now["date"] = d.getDate() < 10 ? "0" + d.getDate() : "" + d.getDate();
         now["hour"] = d.getHours() < 10 ? "0" + d.getHours() : "" + d.getHours();
         now["minute"] = d.getMinutes() < 10 ? "0" + d.getMinutes() : "" + d.getMinutes();
